@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600" />
+    <title>Document</title>
+</head>
+<style>
+  /* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+  .checklist-container {
+    display: flex;
+    flex-direction: row;
+    gap: 68px;
+    min-width: 743px;
+    height: 91px;
+    padding-right: 18px;
+    padding-left: 22px;
+    background: #3579f5;
+    border-radius: 10px;
+    align-items: center;
+  }
+  .checklist-container1 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .task-status-widget {
+    flex: 0 0 auto;
+  }
+  .progress-bar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    padding-right: 13px;
+    padding-left: 13px;
+    background: url("assets/image_3a6bd377.png") 50% / cover no-repeat;
+  }
+  .progress-bar1 {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    font: 400 20px Inter, sans-serif;
+    color: white;
+  }
+  .checklist-info {
+    display: flex;
+    flex: 0 0 auto;
+    margin-left: 16px;
+    align-items: flex-start;
+    height: 64px;
+    gap: 4px;
+    flex-direction: column;
+  }
+  .checklist-title {
+    box-sizing: border-box;
+    padding: 0;
+    padding-right: 13px;
+    padding-left: 13px;
+    margin: 0;
+    font: 400 12px Inter, sans-serif;
+    color: white;
+    background: #2364db;
+    border-radius: 40px;
+    height: 18px;
+    width: 76px;
+    text-align: center
+  }
+  .status-message {
+    padding: 0;
+    margin: 0;
+    font: 600 15px Inter, sans-serif;
+    color: white;
+  }
+  .action-item-text-style {
+    padding: 0;
+    margin: 0;
+    font: 400 12px Inter, sans-serif;
+    color: white;
+  }
+  .action-button {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    width: 170px;
+    min-width: 170px;
+    height: 40px;
+    font: 400 14px Inter, sans-serif;
+    color: #4777ed;
+    cursor: pointer;
+    background: #f4f8ff;
+    border: none;
+    border-radius: 6px;
+  }
+  circle{
+                  transform-origin: center;
+                  transform-box: fill-box;
+                  transform: rotate(-90deg);
+                }
+</style>
+</head>
+<body>
+<div style="display: inline-block; width: 743px">
+  <div class="checklist-container">
+    <div class="checklist-container1">
+      <div class="task-status-widget">
+        <div class="progress-bar">
+          <p class="progress-bar1">0/7</p>
+        </div>
+      </div>
+      <div class="checklist-info">
+        <p class="checklist-title">Чеклист</p>
+        <p class="status-message">Выполнено: 0 из 7 действий</p>
+        <p class="action-item-text-style">Следующее действие: Созвониться с клиентом до 23.05.24 12:00</p>
+      </div>
+    </div>
+    <button class="action-button">Открыть чеклист</button>
+  </div>
+</div>
+</body>
+</html>
